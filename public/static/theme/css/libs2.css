@@ -23652,7 +23652,9 @@ img {
 .btn-menu-open::after,
 .btn-menu-close::after {
 	position: absolute;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	content: "";
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -23679,10 +23681,14 @@ img {
 	display: none;
 	position: absolute;
 }
+.btn-menu-open {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .btn-menu-open>i {
-	padding-top: 12px;
-	padding-left: 6px;
+	fill:white;
 	font-size: 28px;
 	font-weight: bold;
 }

@@ -43,9 +43,10 @@
     <script type="text/javascript">
         var photoGalleries = [];
     </script>
+    
 </head>
 
-<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" style="overflow-x: hidden;">
     <div class="wrapper">
         <header id="header" class="site-header header-style-1 d-none">
             <nav class="navbar bg-white shadow-sm py-1">
@@ -54,7 +55,12 @@
                         <a class="section-title navbar-brand" href="#">L &amp; H</a>
                         <button class="navbar-toggler rounded-0 border-0 p-0" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <i class="bi bi-list fs-3 text-black"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="
+                            width: 24px;
+                            height: 24px;
+                        ">
+                                                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
+                                                      </svg>
                         </button>
                     </div>
                 </div>
@@ -196,7 +202,7 @@
                     <div class="section-sub-title text-desc text-center aos-init">
                         <img class="py-3" width="50px" height="50px" src="https://preview.iwedding.info/templates/template131/img/sub_icon.png"
                             alt="">
-                        <p class="m-0">Hành trình tình yêu đã đưa chúng mình đến một cái kết đẹp. Trong ngày đặc biệt này, sự có mặt của bạn sẽ là món quà vô giá để chúng mình cảm nhận trọn vẹn niềm vui và hạnh phúc. Xin chân thành cảm ơn.</p>
+                        <p class="m-0">Hành trình tình yêu đã đưa chúng mình đến một cái kết đẹp. Trong ngày đặc biệt này, sự có mặt của các bạn sẽ là món quà vô giá để chúng mình cảm nhận trọn vẹn niềm vui và hạnh phúc. Một lần nữa xin chân thành cảm ơn tất cả các bạn!</p>
                     </div>
                 </div>
             </div>
@@ -495,24 +501,21 @@
 
         <section class="py-5 wishes-section section-bg-affect" id="wishes">
             <div class="container-fluid">
-                <h2 data-aos="fade-up" class="section-title text-center aos-init">
+                <h2  class="section-title text-center aos-init">
                     Sổ Lưu Bút
                 </h2>
-                <h3 data-aos="fade-up" class="section-sub-title mb-4 text-center aos-init">
+                <h3  class="section-sub-title mb-4 text-center aos-init">
                     Cảm ơn bạn rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng tôi!
                 </h3>
 
                 <div id="section-comment">
                     <form action="" id="wish-form" class="p-4 contact-validation-active" novalidate="novalidate">
                         <div class="col-auto mb-3 d-flex">
-                            <div class="w-50 me-2">
+                            <div class="w-100 me-2">
                                 <input id="name-comment" type="text" class="form-control"
                                     placeholder="Nhập tên của bạn*" name="name">
                             </div>
-                            <div class="w-50 ms-2">
-                                <input id="email-comment" type="text" class="form-control" placeholder="E-mail"
-                                    name="email">
-                            </div>
+                           
                         </div>
                         <div class="col-auto mb-3">
                             <div class="textarea-emoji-picker position-relative">
@@ -642,13 +645,12 @@
                             </div>
                         </div>
                         <div class="col-auto text-center">
-                            <button type="submit" class="p-2 w-50 btn btn-danger" id="btn-submit-comment">
+                            <button  class="p-2 w-50 btn btn-danger" id="btn-submit-wish" >
                                 Gửi lời chúc
                             </button>
                         </div>
                         <div class="clearfix error-handling-messages">
                             <div id="success">Thank you</div>
-                            <div id="error"> Error occurred while sending email. Please try again later.
                             </div>
                         </div>
                     </form>
@@ -701,11 +703,22 @@
     </div>
 
     <div id="menu-access" class="">
-        <div class="btn-menu-open" style="display: none;">
-            <i class="bi bi-list text-white"></i>
+        <div class="btn-menu-open menu-open" style="display: none;justify-content: center;align-items: center;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="
+            fill: white;
+            width: 30px;
+        ">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
         </div>
-        <div class="btn-menu-close" style="display: block;">
-            <i class="bi bi-x-lg text-white"></i>
+        <div class="btn-menu-close" style="display: flex;justify-content: center;align-items: center;">
+            <!-- <i class="bi bi-x-lg text-white"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" style="
+    fill: white;
+    width: 30px;
+">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
+              </svg>
         </div>
         <ul class="p-0 m-0 list-menu-icon" style="opacity: 1;">
             <li class="text-center">
@@ -719,11 +732,12 @@
             </li>
         </ul>
     </div>
-
+   
+      <script type="text/javascript" src="static/libs/wish.js"></script>
     <script type="text/javascript">
         const biicore = { template_id: '643d7a4d871557f3e90ed3c1', templatePremium: ('1' === '1'), themeRoot: 'https://preview.iwedding.info/templates/template131', webroot: 'https://preview.iwedding.info', coreSite: 'https://biihappy.com', webToken: '61990349db8f76231c132068', isPremium: ('1' === '1'), bgMusic: 'img/motdoi.mp3', alert: JSON.parse('{\"title\":\"L\\u1eddi c\\u1ea3m \\u01a1n t\\u1eeb D\\u00e2u & R\\u1ec3\",\"content\":\"Xin ch\\u00e2n th\\u00e0nh c\\u1ea3m \\u01a1n to\\u00e0n th\\u1ec3 m\\u1ecdi ng\\u01b0\\u1eddi \\u0111\\u00e3 g\\u1eedi l\\u1eddi ch\\u00fac cho v\\u1ee3 ch\\u1ed3ng ch\\u00fang em!\",\"timeout\":5000,\"status\":2,\"cancel_button_text\":\"\"}'), effect: JSON.parse('{\"type\":\"snow\"}'), isAutoPlay: ('1' === '1') };
     </script>
-    <script src="https://preview.iwedding.info/common/calendar.js?v=20240713"></script>
+    <script src="static/libs/siteform.js"></script>
     <script src="https://preview.iwedding.info/common/bii.js?v=20240713"></script>
     <style type="text/css">
         .mouse-scroll-on-mobile {
@@ -980,7 +994,7 @@
         </div>
     </div>
 
-    <script src="https://preview.iwedding.info/templates/template131/js/libs.js?v=20240713"></script>
+    <script src="static/libs/sitelibs.js"></script>
     <script src="https://preview.iwedding.info/templates/template131/js/script.js?v=20240713"></script>
     <script src="https://preview.iwedding.info/common/emoji-picker/js/insertTextAtCursor.js?v=20240713"></script>
     <script type="module" src="https://preview.iwedding.info/common/emoji-picker/js/init.js?v=20240713"></script>
@@ -1736,4 +1750,52 @@
         style="background: rgb(255, 255, 255); width: 3.57px; height: 3.57px; position: absolute; font-size: 0px; z-index: 999999; border-radius: 8px; box-shadow: rgb(85, 85, 85) 1px 1px 1px; top: 6700px; left: 1117.4px;">
     </div><audio src="https://cdn.biihappy.com/ziiweb/wedding-musics/IDo-911.mp3" controls="controls"
         autoplay="autoplay" style="display: none;"></audio>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js";
+            import { getFirestore,addDoc, collection} from "https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyAsEOUAt0HxlYhTycFExjs17tpYtKc9FZ0",
+              authDomain: "halinhweddingpage.firebaseapp.com",
+              projectId: "halinhweddingpage",
+              storageBucket: "halinhweddingpage.appspot.com",
+              messagingSenderId: "3806082522",
+              appId: "1:3806082522:web:a7160dff9b40ddbbd63ce3",
+              measurementId: "G-BB3WLL18EK"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+            const db = getFirestore();
+            console.log('database',db);
+            document.getElementById("btn-submit-wish").addEventListener("click", () =>{
+                const name = document.getElementById('name-comment').value;
+                const content = document.getElementById('content').value;
+                if(name === ''){
+                    alert('Vui lòng nhập tên');
+                    return;
+                }else if(content === ''){
+                    alert('Vui lòng nhập nội dung');
+                    return;
+                }else{
+                    addDoc(collection(db, "wishes"), {
+                        name: name,
+                        content: content,
+                        date: new Date()
+                    }).then((docRef) => {
+                        alert('Lời chúc đã được ghi nhận, cảm ơn bạn rất nhiều!')
+                    }).catch((error) => {
+                        alert("Có lỗi khi gửi lời chúc, vui lòng thử lại sau!")
+                    });
+                }
+            });
+            
+          </script>
 </body>
